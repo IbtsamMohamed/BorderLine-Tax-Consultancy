@@ -1,0 +1,309 @@
+/*Alert Message
+.toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #111;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  z-index: 9999;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.toast.success {
+  background: #1f8f4a;
+}
+
+.toast.error {
+  background: #c0392b;
+}
+
+.hidden {
+  display: none;
+}*/
+
+* {
+  font-family: Poppins, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("images/tile.png") no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+/* WRAP */
+.wrap {
+  width: 100%;
+}
+
+/* HERO SECTION */
+.section1 {
+  min-height: 100vh;
+  background: url("images/background1.png") center/cover;
+  border-radius: 0 0 80px 80px;
+}
+
+/* NAV */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+}
+
+.Logo img {
+  width: 160px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.btn.active {
+  border-bottom: 2px solid #e93b4a;
+}
+
+.menu-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  z-index: 1000;
+  cursor: pointer;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+}
+
+.menu-toggle .close-icon {
+  display: none;
+}
+
+.menu-toggle i {
+  font-size: 28px;
+  color: white;
+}
+
+/* IMPORTANT: correct toggling logic */
+.menu-toggle.active .open-icon {
+  display: none;
+}
+
+.menu-toggle.active .close-icon {
+  display: inline-block;
+}
+
+/* BUTTONS */
+.nav_button_1 {
+  text-decoration: none;
+  background: #e93b4a;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.nav_button_2 {
+  text-decoration: none;
+  background: #e93b4a;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.nav_button_1:hover {
+  background-color: #57161d;
+}
+
+.nav_button_2:hover {
+  background-color: #57161d;
+}
+
+/* INTRO */
+.intro {
+  padding: 80px 5%;
+  color: white;
+}
+
+.large {
+  font-size: 3rem;
+  font-weight: 600;
+  color: white;
+}
+
+.small {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  color: white;
+}
+
+/* SECTIONS */
+.WhoWeAre,
+.OurExpertise {
+  display: flex;
+  padding: 80px 5%;
+  gap: 40px;
+}
+
+.medium {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #e93b4a;
+}
+
+.desc,
+.desc2 {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* ServicesSection & OurTeam*/
+.ServicesSection,
+.OurTeamSection {
+  padding: 80px 5%;
+}
+
+.ServicesSection .text,
+.OurTeamSection .text {
+  margin-bottom: 30px;
+}
+
+/* GRID ONLY FOR CARDS */
+.Services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.OurTeam {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.icon {
+  width: 64px;
+  height: 66px;
+}
+
+.web-design-card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.card-title {
+  color: #e93b4a;
+  font-weight: bold;
+}
+
+/* FOOTER */
+.footer {
+  background: #111;
+  color: white;
+  padding-top: 60px;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 5%;
+  gap: 40px;
+}
+
+.formItems {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.footer-rightsection p {
+  color: #111010;
+  font-size: 1.5rem;
+  margin-bottom: 2%;
+}
+
+.footer-bottomsection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-bottomsection p {
+  color: #f5f5f5;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-buttons {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: black;
+    padding: 20px;
+  }
+
+  .nav-buttons.show {
+    display: flex;
+  }
+
+  .WhoWeAre,
+  .OurExpertise {
+    flex-direction: column;
+  }
+
+  .Services,
+  .OurTeam {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-main {
+    flex-direction: column;
+  }
+}
