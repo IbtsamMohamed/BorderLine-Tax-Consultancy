@@ -39,21 +39,15 @@
   padding: 0;
 }
 
-body {
-  background: url("images/tile.png") no-repeat;
-  background-size: cover;
-  overflow-x: hidden;
-}
-
 /* WRAP */
 .wrap {
   width: 100%;
 }
 
-/* HERO SECTION */
+/* First SECTION */
 .section1 {
   min-height: 100vh;
-  background: url("images/background2.jpeg") center/cover;
+  background: url("images/background2.png") center/cover;
   border-radius: 0 0 80px 80px;
 }
 
@@ -274,11 +268,13 @@ textarea {
 
 /* MOBILE */
 @media (max-width: 900px) {
-  .body {
-    background-image: url("images/background2.jpeg");
-    background-size: contain;
+
+  .section1 {
+    background-image: url("images/background2Mobile.png");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    
   }
 
   .menu-toggle {
