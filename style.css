@@ -184,14 +184,14 @@ body {
   line-height: 1.6;
 }
 
-/* ServicesSection & OurTeam*/
+/* ServicesSection & OurPresenceSection*/
 .ServicesSection,
-.OurTeamSection {
+.OurPresenceSection {
   padding: 80px 5%;
 }
 
 .ServicesSection .text,
-.OurTeamSection .text {
+.OurPresenceSection .text {
   margin-bottom: 30px;
 }
 
@@ -202,7 +202,7 @@ body {
   gap: 20px;
 }
 
-.OurTeam {
+.OurPresence {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
