@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.querySelector(".menu-toggle");
   const navMenu = document.querySelector("#navMenu");
@@ -51,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-=======
+
 document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.querySelector(".menu-toggle");
   const navMenu = document.querySelector("#navMenu");
@@ -143,4 +142,4 @@ function showToast(message, type = "success") {
     toast.classList.remove("show");
   }, 3000);
 }
->>>>>>> d5caeba (ebtsamomr72@gmail.com)
+
