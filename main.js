@@ -103,7 +103,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-document.querySelector(".getStarted").addEventListener("submit", async (e) => {
+
+/*document.querySelector(".getStarted").addEventListener("submit", async (e) => {
   e.preventDefault();
 
   const formData = {
@@ -142,4 +143,4 @@ function showToast(message, type = "success") {
     toast.classList.remove("show");
   }, 3000);
 }
-
+*/
